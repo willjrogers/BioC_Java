@@ -54,6 +54,8 @@ public class BioCSentence {
     offset = sentence.offset;
     text = sentence.text;
 
+    infons = new HashMap<String, String>(sentence.getInfons());
+
     annotations = new ArrayList<BioCAnnotation>();
     for (BioCAnnotation ann : sentence.annotations) {
       annotations.add(new BioCAnnotation(ann));
@@ -101,6 +103,8 @@ public class BioCSentence {
   }
   
   public String getInfon(String key) {
+    if (infons == null)
+      return null;
     return infons.get(key);
   }
 

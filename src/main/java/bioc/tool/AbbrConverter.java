@@ -22,9 +22,9 @@ public class AbbrConverter extends CopyConverter{
     add annotation for short and long form and add a relation between 
  */
  public BioCPassage getPassage(BioCPassage in) {
-		BioCPassage out = new BioCPassage();
+		BioCPassage out = new BioCPassage(in);
 		out.setOffset( in.getOffset() );
-		//out.setText( in.getText() );
+		out.setText( in.getText() );
 		String passageText = in.getText();
 		
 		if (passageText != null) {
@@ -54,9 +54,9 @@ public class AbbrConverter extends CopyConverter{
 	* Copy a {@code BioCSentence}.
 	*/
 	public BioCSentence getSentence(BioCSentence in) {
-		BioCSentence out = new BioCSentence();
+		BioCSentence out = new BioCSentence(in);
 		out.setOffset( in.getOffset() );
-		//out.setText( in.getText() );
+		out.setText( in.getText() );
 		
 		String sentenceText = in.getText();
 		
