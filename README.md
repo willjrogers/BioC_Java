@@ -27,7 +27,7 @@ For more about these see:
 + ReadMe_BioC_C++.txt
 + ReadMe_BioC_Java.txt
 
-See [Public Domain Notice](NOTICE.md)
+See [Public Domain Notice](LICENSE.md)
 
 ------------------------
 DEVELOPERS
